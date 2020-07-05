@@ -1,0 +1,24 @@
+# permissions for end users to edit apiservices.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: apiservice-editor-role
+rules:
+- apiGroups:
+  - platform.dev.env
+  resources:
+  - apiservices
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - platform.dev.env
+  resources:
+  - apiservices/status
+  verbs:
+  - get

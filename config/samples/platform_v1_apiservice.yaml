@@ -1,0 +1,7 @@
+apiVersion: platform.dev.env/v1
+kind: APIService
+metadata:
+  name: apiservice-sample
+spec:
+  # Add fields here
+  foo: bar

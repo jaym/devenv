@@ -1,0 +1,10 @@
+domain: dev.env
+repo: github.com/jaym/kube-dev-env
+resources:
+- group: platform
+  kind: APIService
+  version: v1
+- group: platform
+  kind: Database
+  version: v1
+version: "2"

@@ -1,0 +1,7 @@
+apiVersion: platform.dev.env/v1
+kind: Database
+metadata:
+  name: sample
+  namespace: dbtest
+spec:
+  type: "Postgres"
